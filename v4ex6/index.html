@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Using Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content:space-around;
+            padding: 10px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .item{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img style="height: 40px;" src="logo.png" alt="logo">
+        </div>
+        <div>
+            <ul class="right">
+                <li class="item">Products</li>
+                <li class="item">Pricing</li>
+                <li class="item">Resources</li>
+                <li class="item">About Us</li>
+                <li class="item">Security and Compliance</li>
+                <img style="width: 35px; height: 35px;" class="icon" src="icon.png" alt="icon">
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

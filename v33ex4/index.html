@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        :root {
+            --color: rgb(126, 129, 112);
+            --seccolor: rgba(210, 233, 233, 0.9);
+            --fontcolor: rgb(161, 161, 161);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbarlist {
+            display: flex;
+            list-style: none;
+            padding: 5px;
+            background-color: var(--color);
+        }
+
+        button {
+            padding: 10%;
+            margin: 5px;
+            width: 100px;
+            border-radius: 9px;
+            background-color: var(--seccolor);
+            font-weight: 700;
+            color:var(--fontcolor)
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="navbarlist">
+                <li><button><a href="/">Home</button></li>
+                <li><button><a href="/">About Us</a></button></li>
+                <li><button><a href="/">Catalog</a></button></li>
+                <li><button><a href="/">Payments</a></button></li>
+                <li><button><a href="/">Contact</a></button></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

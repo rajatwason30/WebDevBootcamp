@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        :root {
+            --font-color: white;
+            --background-color: grey;
+            --sec-bgcolor: darkgrey;
+            --navbarcolor: lightgrey;
+            --leftboxcolor: cyan;
+            --rightboxcolor: pink;
+            --bigboxcolor: var(--background-color)
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbarlist {
+            list-style: none;
+            display: flex;
+            background-color: var(--navbarcolor);
+            padding: 5px;
+        }
+
+        ul>li {
+            padding: 5px;
+            background-color: var(--background-color);
+            color: var(--font-color);
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body>div.navDiv {
+            position: sticky;
+            top: 0px;
+        }
+
+        .bigbox {
+            margin: 5vw;
+            width: 90vw;
+            height: 90vh;
+            background-color: var(--bigboxcolor);
+            border: 4px solid rgb(113, 113, 113);
+        }
+
+        .leftbox {
+            width: 40%;
+            height: 80%;
+            margin-top: 60px;
+            margin-left: 6vw;
+            margin-right: 6vw;
+            background-color: var(--leftboxcolor);
+            display: inline-block;
+        }
+
+        .rightbox {
+            width: 40%;
+            height: 80%;
+            background-color: var(--rightboxcolor);
+            display: inline-block;
+        }
+
+        footer {
+            width: 100vw;
+            height: 5vh;
+            background-color: var(--navbarcolor);
+            text-align: center;
+            border: 2px solid rgb(113, 113, 113);
+        }
+
+        .welcomebox {
+            width: 60vw;
+            background-color: var(--background-color);
+            font-size: 36px;
+            margin-left: 10vw;
+            margin-bottom: 5vh;
+            padding: 10%;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 1000;
+            font-style: italic;
+            border: 4px solid rgb(113, 113, 113);
+            color: var(--font-color);
+        }
+
+        footer>p {
+            padding: 5px;
+        }
+
+        .fixedlogo{
+            width: 8vw;
+            height: 8vw;
+            position: fixed;
+            bottom: 10vh;
+            right: 5vw;
+            position: fixed;
+            border: 1px solid black;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navDiv">
+        <nav>
+            <ul class="navbarlist">
+                <li><a href="/">Home</li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Catalog</a></li>
+                <li><a href="/">Payments</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+
+    </header>
+
+    <div class="bigbox">
+        <div class="leftbox"></div>
+        <div class="rightbox"></div>
+    </div>
+
+    <div>
+        <p class="welcomebox">Welcome to Rajat's Webpage.</p>
+    </div>
+
+    <span>
+        <img class="fixedlogo" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=626&ext=jpg" alt="logo">
+    </span>
+
+    <footer>
+        <p>
+            All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
