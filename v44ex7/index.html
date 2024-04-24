@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .item {
+            padding: 10px;
+        }
+
+        .downloadtab {
+            height: 150px;
+            width: 300px;
+            background-color: rgb(241, 241, 241);
+            display: grid;
+            grid-template-areas: "text1 text1"
+                "text2 text2"
+                "button button";
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .downloadtab>div:first-child {
+            font-size: large;
+            font-weight: 1000;
+            grid-area: text1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .downloadtab>div:nth-child(2) {
+            font-weight: lighter;
+            grid-area: text2;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .download {
+            margin: 5px;
+            border-radius: 6px;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .bit32 {
+            background-color: rgb(50, 170, 255);
+        }
+
+        .bit64 {
+            background-color: rgb(32, 193, 139);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .outerbox {
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 26vw 26vw 26vw;
+            /* align-items: center;
+            align-content: center; */
+            place-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (orientation: portrait) {
+            .outerbox {
+                width: 100vw;
+                grid-template-columns: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img style="height: 40px;" src="logo.png" alt="logo">
+        </div>
+        <div>
+            <ul class="right">
+                <li class="item">Products</li>
+                <li class="item">Pricing</li>
+                <li class="item">Resources</li>
+                <li class="item">About Us</li>
+                <li class="item">Security and Compliance</li>
+                <img style="width: 35px; height: 35px;" class="icon" src="icon.png" alt="icon">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="outerbox">
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+        <div class="downloadtab">
+            <div>
+                LOREM
+            </div>
+            <div style="align-self: self-start;">
+                lorem
+            </div>
+            <div class="bit32 download"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="bit64 download"><a href="ue_english_64.exe">Download 64-bit</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
