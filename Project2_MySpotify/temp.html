@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Audio Player</title>
+    <style>
+        #audio-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 20px auto;
+        }
+        #progress-bar {
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="audio-controls">
+        <audio id="audio-player" src="songs/ncs/Mustafa.mp3"></audio>
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <input type="range" id="progress-bar" value="0" max="100">
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <script src="tempscript.js"></script>
+</body>
+</html>

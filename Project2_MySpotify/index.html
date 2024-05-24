@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="maincontainer flex">
+        <div class="left">
+            <div class="home bg-darkgrey curve">
+                <div class="logo"><img class="invert" src="assets/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="assets/home.svg" width="20px" alt="homeicon">
+                        <button>Home</button>
+                    </li>
+                    <li><img class="invert" src="assets/search.svg" width="20px" alt="searchicon">
+                        <button>Search</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="myLibrary bg-darkgrey curve">
+                <div class="lylibcontainer flex">
+                    <div class="flex aligncenter">
+                        <img class="invert" width="30px" src="assets/library.svg" alt="library">
+                        <p>Your Library</p>
+                    </div>
+                    <div>
+                        <img class="invert" width="20px" src="assets/plus.svg" alt="+">
+                    </div>
+                </div>
+                <div class="libcardcontainer verticalflex">
+
+                </div>
+
+            </div>
+            <div class="gotolinks bg-darkgrey curve flex">
+                <div>
+                    <a href="https://www.spotify.com/in-en/legal/">
+                        <span>Legal</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                        <span>Privacy Policy</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                        <span>Cookies</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                        <span>About Ads</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.spotify.com/in-en/accessibility/">
+                        <span>Accessibility</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="rightoutermostct bg-darkgrey curve">
+                <div class="nav flex jcspacebw">
+                    <div class="prevnextbutton flex jcspacearound">
+                        <div class="flex jccenter"><img src="assets/leftarrow.svg" width="12px" class="invert"
+                                alt="leftarrow.svg"></div>
+                        <div class="flex jccenter"><img src="assets/rightarrow.svg" width="12px" class="invert"
+                                alt="leftarrow.svg"></div>
+                    </div>
+                    <div class="loginbutton">
+                        <button class="signup">Sign up</button>
+                        <button class="login">Log in</button>
+                    </div>
+                </div>
+
+
+                <div class="playlistctouter curve">
+                    <h2>Popular Albums</h2>
+
+                    <div class="playlistct flex flexwrap overflowauto">
+                        <!-- <div class="card bg-darkgrey curve">
+                            <img class="curve" src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                                alt="">
+                            <h3>ANIMAL</h3>
+                            <p>Manan Bhardwaj, Vishal Mishra, Jaani.</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="playbar flex aligncenter jcspacearound curve">
+                    <div class="playbuttons flex jccenter">
+                        <div class="previous">
+                            <img class="invert" src="/assets/prev.svg" alt="prev">
+                        </div>
+                        <div class="play">
+                            <img class="invert" src="/assets/play.svg" alt="play">
+                        </div>
+                        <div class="next">
+                            <img class="invert" src="/assets/next.svg" alt="next">
+                        </div>
+                    </div>
+
+                    <div class="trackscroll curve">
+                        <div class="scrollcircle"></div>
+                    </div>
+                    <div class="volbar flex aligncenter">
+                        <img class="invert" src="/assets/vol.svg" alt="vol">
+                        <div class="vol curve">
+                            <div class="volcircle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

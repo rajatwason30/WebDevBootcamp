@@ -1,0 +1,70 @@
+:root {
+    --font1size: 48px;
+    --font2size: 22px;
+    --font3size: 18px;
+    --black:black;
+    --darkgrey:#141414;
+    --grey:#242424;
+    --lightgrey:#919191;
+}
+
+.bg-darkgrey{
+    background-color: var(--darkgrey);
+}
+
+.bg-grey{
+    background-color: var(--grey);
+}
+
+.curve{
+    border-radius: 8px;
+}
+
+.flex{
+    display: flex;
+}
+
+.whiteborder{
+    border:2px solid white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.aligncenter{
+    align-items: center ;
+}
+
+.verticalflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.jcspacebw{
+    justify-content: space-between;
+}
+
+.jccenter{
+    justify-content:center;
+}
+
+.jcspacearound{
+    justify-content:space-around;
+}
+
+.overflowauto{
+    overflow: auto;
+}
+
+.blockelement{
+    display: block;
+}
+
+.flexwrap{
+    flex-wrap: wrap;
+}
+
+.hidden{
+    display: none;
+}
