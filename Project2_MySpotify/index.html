@@ -92,6 +92,9 @@
                         <!-- <div class="card bg-darkgrey curve">
                             <img class="curve" src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
                                 alt="">
+                            <div class="albumplay">
+                                <img class="invert" src="/assets/largePlay.svg" alt="play">
+                            </div>
                             <h3>ANIMAL</h3>
                             <p>Manan Bhardwaj, Vishal Mishra, Jaani.</p>
                         </div> -->
@@ -110,18 +113,35 @@
                             <img class="invert" src="/assets/next.svg" alt="next">
                         </div>
                     </div>
-
-                    <div class="trackscroll curve">
-                        <div class="scrollcircle"></div>
+                    <div class="seekbarct verticalflex">
+                        <div class="currentSong">
+                            SONG NAME
+                        </div>
+                        <div class="trackscroll curve">
+                            <input width="100%" type="range" id="progress-bar" id="progress-bar" value="0" max="100">
+                        </div>
                     </div>
                     <div class="volbar flex aligncenter">
                         <img class="invert" src="/assets/vol.svg" alt="vol">
                         <div class="vol curve">
-                            <div class="volcircle"></div>
+                            <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
                         </div>
                     </div>
 
                 </div>
+
+                <div class="show-songs-ct">
+                    <!-- <div class="showSongs whiteborder curve overflowauto verticalflex">
+                        <div class="cross"><img src="/assets/cross.svg" alt="" srcset=""></div>
+                        <div class="libcard bg-grey curve flex aligncenter jcspacebw">
+                            <img src="/assets/music.svg" alt="" class="invert">
+                            <div class="songAndArtistName">
+                                <div class="songName">Mustafa</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
             </div>
 
         </div>

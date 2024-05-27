@@ -84,6 +84,14 @@ button{
     padding: 10px;
 }
 
+.libcard:hover{
+    background-color: black;
+}
+
+.libcard>img:nth-child(3){
+    cursor: pointer;
+}
+
 .rightoutermostct{
     height: 92%;
     margin: 10px;
@@ -157,9 +165,28 @@ button{
     margin: 10px;
 }
 
+.card:hover{
+    background: #000;
+}
+
 .card > img{
     width: 100%;
     object-fit: contain;
+}
+
+.albumplay{
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0, 193, 0);
+    border-radius: 30px;
+    position: relative;
+    top: -70px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.albumplay:hover{
+    background-color: rgb(0, 173, 0);
 }
 
 .playbar{
@@ -172,36 +199,82 @@ button{
 
 .playbuttons{
     width: 100px;
+    cursor: pointer;
 }
 
 .trackscroll{
-    background-color: white;
+    /* background-color: white; */
     width: 50vw;
-    height: 3px;
+    /* height: 3px; */
     margin: 4px;
+    cursor: pointer;
+    position: relative;
+    top:5px;
 }
 
 .vol{
-    background-color: white;
+    /* background-color: white; */
     width: 10vw;
-    height: 3px;
+    /* height: 3px; */
     margin: 5px;
+    cursor: pointer;
 }
 
-.scrollcircle{
+/* .scrollcircle{
     width: 14px;
     height: 15px;
     border-radius: 10px;
     background-color: white;
     position: relative;
     top:-7px;
-}
+    left:0%;
+    cursor: pointer;
+} */
 
-.volcircle{
+/* .volcircle{
     width: 14px;
     height: 15px;
     border-radius: 10px;
     background-color: white;
     position: relative;
     top:-7px;
+    left: 0%;
+    cursor: pointer;
+} */
+
+#progress-bar{
+    width: 100%;
+}
+
+#volume-control{
+    width: 100%;
+}
+
+.currentSong{
+    font-weight: 900;
+    padding: 0px 8px;
+}
+
+.showSongs{
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    position:fixed;
+    z-index: 10;
+    bottom: 30vh;
+    left: 50vw;
+    gap:10px;
+}
+
+.cross{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top:2%;
+    left:90%;
+    margin-bottom:10px;
+}
+
+.cross:hover{
+    cursor: pointer;
 }
